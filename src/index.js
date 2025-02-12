@@ -1,9 +1,37 @@
 import React from "react";
-import ReactDom from "react-dom/client";
+import ReactDOM from "react-dom/client";
 
-function Greeting() {
-  return <h4></h4>
+function BookList() {
+  return (
+    <section>
+      <Book />
+    </section>
+  );
 }
 
-const root = ReactDom.createRoot(document.getElementById("root"));
-root.render(<Greeting />);
+const Book = () => {
+  return (
+    <article>
+      <Image></Image>
+    </article>
+  );
+};
+const Image = () => {
+  return (
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/I/91I1KDnK1kL._AC_UL900_SR900,600_.jpg"
+      alt=""
+    />
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<BookList />);
+
+// const Greeting = () => {
+//   return React.createElement(
+//     'div',
+//     {},
+//     React.createElement("h1", {}, "hello world")
+//   );
+// };
