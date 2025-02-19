@@ -3,14 +3,14 @@ import ReactDOM from "react-dom/client";
 //CSS
 import "./index.css";
 
-import { books } from "./books";
+import { data } from "./books";
 
 //setup vars
 
 function BookList() {
   return (
     <section className="booklist">
-      {books.map((book) => {
+      {data.map((book) => {
         return <Book key={book.id} {...book}></Book>;
       })}
     </section>
