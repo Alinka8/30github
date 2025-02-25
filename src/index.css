@@ -18,7 +18,12 @@ body {
   display: grid;
   gap: 2rem;
 }
-
+.button {
+  display: flex;
+  padding: 3px;
+  background-color: aliceblue;
+  margin-top: 3px;
+}
 @media screen and (min-width: 768px) {
   .booklist {
     grid-template-columns: repeat(3, 1fr);

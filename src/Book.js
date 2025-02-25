@@ -23,11 +23,15 @@ const Book = ({ img, title, author }) => {
       <img src={img} alt="" className="image" />
       <h1 onClick={() => console.log(title)}> {title}</h1>
       <h4>{author}</h4>
-      <button type="button" onClick={clickHandler}>
+      <button className="button" type="button" onClick={clickHandler}>
         {" "}
         reference example
       </button>
-      <button type="button" onClick={() => complexExample(author)}>
+      <button
+        className="button"
+        type="button"
+        onClick={() => complexExample(author)}
+      >
         more complex example
       </button>
     </article>
