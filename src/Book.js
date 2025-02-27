@@ -14,27 +14,32 @@ const Book = ({ img, title, author }) => {
   };
 
   return (
-    <article
-      className="book"
-      onMouseOver={() => {
-        console.log(title);
-      }}
-    >
-      <img src={img} alt="" className="image" />
-      <h1 onClick={() => console.log(title)}> {title}</h1>
-      <h4>{author}</h4>
-      <button className="button" type="button" onClick={clickHandler}>
-        {" "}
-        reference example
-      </button>
-      <button
-        className="button"
-        type="button"
-        onClick={() => complexExample(author)}
+    <
+      div>
+      <h1> Online Bookstore</h1>
+
+      <article
+        className="book"
+        onMouseOver={() => {
+          console.log(title);
+        }}
       >
-        more complex example
-      </button>
-    </article>
+        <img src={img} alt="" className="image" />
+        <h1 onClick={() => console.log(title)}> {title}</h1>
+        <h4>{author}</h4>
+        <button className="button" type="button" onClick={clickHandler}>
+          {" "}
+          reference example
+        </button>
+        <button
+          className="button"
+          type="button"
+          onClick={() => complexExample(author)}
+        >
+          more complex example
+        </button>
+      </article>
+    </div>
   );
 };
 
