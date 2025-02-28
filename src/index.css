@@ -20,9 +20,12 @@ body {
 }
 .button {
   display: flex;
+  flex-direction: column;
   padding: 3px;
-  background-color: aliceblue;
+  background-color: rgb(176, 197, 214);
   margin-top: 3px;
+  border-radius: 10px;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .booklist {
@@ -34,6 +37,8 @@ body {
   background: #6ebece;
   border-radius: 1rem;
   padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
 }
 .book h1 {
   margin-top: 0.5rem;
