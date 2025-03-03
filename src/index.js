@@ -6,17 +6,21 @@ import "./index.css";
 import { data } from "./books";
 import Book from "./Book";
 import { greetings } from "./testing/testing";
+import NavBar from "./navBar/NavBar";
 
 //setup vars
 
 function BookList() {
   console.log(greetings);
   return (
-    <section className="booklist">
-      {data.map((book) => {
-        return <Book key={book.id} {...book}></Book>;
-      })}
-    </section>
+    <div>
+      <NavBar />
+      <section className="booklist">
+        {data.map((book) => {
+          return <Book key={book.id} {...book}></Book>;
+        })}
+      </section>
+    </div>
   );
 }
 
