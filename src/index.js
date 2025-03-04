@@ -14,7 +14,6 @@ function BookList() {
   console.log(greetings);
   return (
     <div>
-      <NavBar />
       <section className="booklist">
         {data.map((book) => {
           return <Book key={book.id} {...book}></Book>;
