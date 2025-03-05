@@ -15,6 +15,7 @@ const Book = ({ img, title, author }) => {
 
   return (
     <div>
+    
       <article
         className="book"
         onMouseOver={() => {
