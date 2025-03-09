@@ -19,3 +19,6 @@
 // function myFunction(p1, p2) {
 //   return p1 * p2;
 // }
+let x = "firstname";
+let y = "age";
+person[x] + " is " + person[y] + " years old.";
