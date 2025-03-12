@@ -23,6 +23,6 @@
 // let y = "age";
 // person[x] + " is " + person[y] + " years old.";
 
-let x = 10;
+let x = 40;
 let y = 20;
 let z = x + y;
